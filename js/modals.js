@@ -13,7 +13,7 @@ window.openImageModal = function (imgElement) {
 
 // Share Modal
 window.openShareModal = function () {
-    const shareUrl = "https://demo-iota-gold.vercel.app/";
+    const shareUrl = "https://creativepluz-gamma.vercel.app/";
     const shareText = "Check out my Link ";
 
     if (navigator.share) {
