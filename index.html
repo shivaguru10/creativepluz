@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html style="--theme-color: #e3010f; --theme-color-light: #e3010f70;" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
+
+    <title>CreativePluz</title>
+
+    <meta name="description"
+        content="Unlimited Edits with your own Admin panel. Create your Card within 2 minute by easy steps. Multiple designs available on website. It's like mini website.">
+    <meta name="keywords" content="Virtual Business Card">
+
+    <!-- Open Graph -->
+    <meta property="og:image" itemprop="image"
+        content="../www.virtualbusinesscard.in/demo-templates/images/edesignguru-logo-og.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Uma Shankar">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://card.websi.in/demo-templates/images/favicon.ico">
+
+    <!-- External CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://card.websi.in/demo-templates/css/template1.css" rel="stylesheet">
+    <link href="https://card.websi.in/demo-templates/common/css/fonts.css" rel="stylesheet">
+    <link href="https://card.websi.in/demo-templates/common/css/star-rating.css" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/sections.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Section Containers -->
+    <div id="section-home"></div>
+    <div id="section-aboutus"></div>
+    <div id="section-products-services"></div>
+    <div id="section-payment"></div>
+    <div id="section-photogallery"></div>
+    <div id="section-videogallery"></div>
+    <div id="section-feedback"></div>
+    <div id="section-location"></div>
+    <div id="section-enquiry"></div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="copyright-inner">
+            &copy; 2026 <a href="https://card.websi.in/index.html" target="_blank">www.creativepluz.in</a>
+        </div>
+    </div>
+
+    <!-- Footer Menu -->
+    <div class="footer" style="background-color: #3A3A3A;">
+        <ul class="footer-menu">
+            <li>
+                <a class="footer-menu-link" href="#home">
+                    <i class="footer-menu-icon fa fa-home"></i>
+                    <div class="footer-menu-text">HOME</div>
+                </a>
+            </li>
+            <li>
+                <a class="footer-menu-link" href="#aboutus">
+                    <i class="footer-menu-icon fa fa-user"></i>
+                    <div class="footer-menu-text">ABOUT US</div>
+                </a>
+            </li>
+            <li>
+                <a class="footer-menu-link" href="#products-services">
+                    <i class="footer-menu-icon fa fa-shopping-cart"></i>
+                    <div class="footer-menu-text">PRODUCTS</div>
+                </a>
+            </li>
+            <li>
+                <a class="footer-menu-link" href="#payment">
+                    <i class="footer-menu-icon fa fa-inr"></i>
+                    <div class="footer-menu-text">PAYMENT</div>
+                </a>
+            </li>
+            <li>
+                <a class="footer-menu-link" href="#photogallery">
+                    <i class="footer-menu-icon fa fa-picture-o"></i>
+                    <div class="footer-menu-text">GALLERY</div>
+                </a>
+            </li>
+            <li>
+                <a class="footer-menu-link" href="#videogallery">
+                    <i class="footer-menu-icon fa fa-youtube-square"></i>
+                    <div class="footer-menu-text">VIDEOS</div>
+                </a>
+            </li>
+            <li>
+                <a class="footer-menu-link" href="#feedback">
+                    <i class="footer-menu-icon fa fa-star-half-o"></i>
+                    <div class="footer-menu-text">FEEDBACK</div>
+                </a>
+            </li>
+            <li>
+                <a class="footer-menu-link" href="#enquiry">
+                    <i class="footer-menu-icon fa fa-comments"></i>
+                    <div class="footer-menu-text">ENQUIRY</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" id="imageModalClose">&times;</span>
+        <img class="modal-content fadeIn" id="img01" alt="">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Share Modal -->
+    <div id="shareModal" class="modal share-modal">
+        <div class="share-form fadeInUpBig">
+            <div class="share-form-header">
+                <h3 class="share-form-header-text">Share Card</h3>
+                <span class="close" id="shareModalClose">&times;</span>
+            </div>
+            <div class="share-form-buttons-container">
+                <div class="share-btn-heading">
+                    <img src="https://card.websi.in/demo-templates/images/tild-arrow.svg" class="share-btn-arrow" alt="">
+                    <div class="share-btn-heading-text">Share my Virtual Business Card in your network.</div>
+                </div>
+                <ul class="share-btn">
+                    <li><i class="share-btn-whatsapp fa fa-whatsapp"></i></li>
+                    <li><i class="share-btn-sms fa fa-comments"></i></li>
+                    <li><i class="share-btn-facebook fa fa-facebook-f"></i></li>
+                    <li><i class="share-btn-twitter fa fa-twitter"></i></li>
+                    <li><i class="share-btn-skype fa fa-skype"></i></li>
+                    <li><i class="share-btn-pinterest fa fa-pinterest"></i></li>
+                    <li><i class="share-btn-linkedin fa fa-linkedin"></i></li>
+                    <li><i class="share-btn-mail fa fa-envelope"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enquiry Modal -->
+    <div id="enquiryModal" class="modal share-modal">
+        <div class="share-form fadeInUpBig"
+            style="width: 90%; max-width: 500px; padding: 20px; border-radius: 10px; position: relative; max-height: 90vh; overflow-y: auto;">
+            <span class="close" id="enquiryModalClose"
+                style="position: absolute; top: 10px; right: 20px; color: #555; font-size: 30px; cursor: pointer; z-index: 1000;">&times;</span>
+            <div style="text-align:center;">
+                <h2 class="section-heading"
+                    style="padding-top: 10px; margin-bottom: 20px; font-size: 18px; border-bottom: 2px solid #e3010f; display: inline-block; padding-bottom: 5px; color: #e3010f;">
+                    ENQUIRY FORM</h2>
+            </div>
+
+            <!-- Service Details Display -->
+            <div id="enqServiceDisplay"
+                style="display: none; margin-bottom: 20px; text-align: left; background: #f9f9f9; padding: 15px; border-radius: 8px;">
+                <h3 id="enqServiceTitle" style="font-size: 18px; margin-bottom: 10px; color: #333; margin-top: 0;"></h3>
+                <img id="enqServiceImage" src="" style="width: 100%; border-radius: 6px; margin-bottom: 10px;">
+                <p id="enqServiceDetails" style="font-size: 14px; color: #555; margin-bottom: 10px; line-height: 1.5;"></p>
+
+                <!-- Pricing Section (populated dynamically) -->
+                <div id="enqPricingSection" style="display:none; align-items:center; gap:10px; flex-wrap:wrap; margin-top:4px;"></div>
+            </div>
+
+            <form class="enquiry-form">
+                <input type="text" name="enquiryName" placeholder="Enter Full Name" required>
+                <div class="flex">
+                    <div class="enquiry-phoneNumber">
+                        <input type="text" inputmode="numeric" name="phoneNumber" placeholder="Enter Phone Number"
+                            pattern="\d{10}" maxlength="10" title="Phone number must be exactly 10 digits"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
+                    </div>
+                    <div class="enquiry-email">
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                    </div>
+                </div>
+                <div class="flex" style="margin-top: 10px; gap: 10px;">
+                    <div class="enquiry-city" style="flex: 1;">
+                        <input type="text" name="city" placeholder="Enter Your City" required
+                            style="width: 100%; box-sizing: border-box;">
+                    </div>
+                    <div class="enquiry-quantity" style="flex: 1;">
+                        <input type="text" inputmode="numeric" name="quantity" placeholder="Quantity"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'');" required
+                            style="width: 100%; box-sizing: border-box;">
+                    </div>
+                </div>
+                <textarea name="message" id="enquiryProductMessage" placeholder="Enter Message" required
+                    style="margin-top: 10px;"></textarea>
+                <input type="submit" value="Send"
+                    onclick="if(this.form.checkValidity()){ sendWhatsAppEnquiry(this); } else { this.form.reportValidity(); } return false;">
+            </form>
+        </div>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://card.websi.in/demo-templates/images/star-rating.js.download"></script>
+    <script src="https://card.websi.in/demo-templates/images/script.js.download"></script>
+
+    <!-- Local Scripts -->
+    <script src="js/feedback.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<div class="page-container" id="enquiry">
+
+        <h2 class="section-heading">ENQUIRY FORM</h2>
+
+        <form class="enquiry-form">
+            <input type="text" name="enquiryName" id="enquiryName" placeholder="Enter Full Name" required>
+            <br>
+            <div class="flex">
+                <div class="enquiry-phoneNumber">
+                    <input type="text" inputmode="numeric" name="phoneNumber" id="phoneNumber" placeholder="Enter Phone Number" pattern="\d{10}" maxlength="10" title="Phone number must be exactly 10 digits" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required>
+                    <br>
+                </div>
+                <div class="enquiry-email">
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                    <br>
+                </div>
+            </div>
+            <div class="flex" style="margin-top: 10px; gap: 10px;">
+                <div class="enquiry-city" style="flex: 1;">
+                    <input type="text" name="city" id="city" placeholder="Enter Your City" required style="width: 100%; box-sizing: border-box;">
+                </div>
+                <div class="enquiry-quantity" style="flex: 1;">
+                    <input type="text" inputmode="numeric" name="quantity" id="quantity" placeholder="Quantity" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required style="width: 100%; box-sizing: border-box;">
+                </div>
+            </div>
+            <br>
+            <textarea name="message" id="message" placeholder="Enter Message" required></textarea>
+            <br>
+            <input type="submit" value="Send" onclick="if(this.form.checkValidity()){ sendWhatsAppEnquiry(this); } else { this.form.reportValidity(); } return false;">
+        </form>
+
+    </div>
