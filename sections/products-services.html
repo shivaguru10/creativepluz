@@ -60,13 +60,32 @@
             width: 100%;
         }
     }
+
+    .services-grid {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+        justify-items: center;
+    }
+
+    /* Desktop overrides */
+    @media (min-width: 1024px) {
+        .services-grid {
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)) !important;
+            gap: 40px !important;
+            justify-items: stretch !important;
+        }
+        .serivecard {
+            width: 100% !important;
+        }
+    }
 </style>
 
 <div class="page-container" id="products-services">
 
     <h2 class="section-heading">Services</h2>
 
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; justify-items: center;">
+    <div class="services-grid">
 
         <div class="serivecard">
             <h4>Website Design</h4>

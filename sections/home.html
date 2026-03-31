@@ -1,6 +1,54 @@
 <div class="main-wrapper" id="home">
 
-    <!-- Header with Logo and Views -->
+    <!-- Desktop Hero Section (Hidden on Mobile) -->
+    <div class="desktop-hero-section">
+        <div class="desktop-hero-left">
+            <img src="images/logo.png" alt="Creativepluz Logo" class="desktop-hero-logo">
+            <div class="desktop-hero-info">
+                <h1>Uma Shankar</h1>
+                <p>Founder, Creativepluz</p>
+            </div>
+        </div>
+        <div class="desktop-hero-right">
+            <a href="tel:919952573997" class="desktop-hero-btn" style="background: #e5605d;" title="Call"><i class="fa fa-phone"></i></a>
+            <a href="https://wa.me/918667573511?text=Got%20reference%20from%20your%20Virtual%20Business%20Card." target="_blank" class="desktop-hero-btn" style="background: #2ecc71;" title="WhatsApp"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://maps.app.goo.gl/ayD6BbPquR9shN7w9" target="_blank" class="desktop-hero-btn" style="background: #3498db;" title="Location"><i class="fa fa-map-marker"></i></a>
+            <a href="mailto:Creativepluz.in@gmail.com" class="desktop-hero-btn" style="background: #f39c12;" title="Email"><i class="fa fa-envelope"></i></a>
+            <a href="javascript:void(0);" onclick="openShareModal(this, 'vbc')" class="desktop-hero-btn" style="background: #c2185b;" title="Share"><i class="fa fa-share-alt"></i></a>
+        </div>
+    </div>
+
+    <!-- Desktop Contact Grid (Hidden on Mobile) -->
+    <div class="desktop-contact-grid">
+        <a class="desktop-contact-card" href="https://maps.app.goo.gl/ayD6BbPquR9shN7w9" target="_blank">
+            <div class="desktop-contact-icon" style="background: #fff; border: 1px solid #ddd; color: #333;"><i class="fa fa-map-marker"></i></div>
+            <span class="desktop-contact-text">Lerniyar Street, SH 84, Solar Pirivu, Erode, Tamil Nadu 638002</span>
+        </a>
+        <a class="desktop-contact-card" href="mailto:Creativepluz.in@gmail.com">
+            <div class="desktop-contact-icon" style="background: #fff; border: 1px solid #ddd; color: #333;"><i class="fa fa-envelope"></i></div>
+            <span class="desktop-contact-text">Creativepluz.in@gmail.com</span>
+        </a>
+        <a class="desktop-contact-card" href="https://store.creatorschoice.in/" target="_blank">
+            <div class="desktop-contact-icon" style="background: #fff; border: 1px solid #ddd; color: #333;"><i class="fa fa-globe"></i></div>
+            <span class="desktop-contact-text">http://www.creativepluz.in/</span>
+        </a>
+        <a class="desktop-contact-card" href="tel:919952573997">
+            <div class="desktop-contact-icon" style="background: #fff; border: 1px solid #ddd; color: #333;"><i class="fa fa-phone"></i></div>
+            <span class="desktop-contact-text">+91 9952573997</span>
+        </a>
+    </div>
+
+    <!-- Desktop Social Row (Hidden on Mobile) -->
+    <div class="desktop-social-row">
+        <a href="https://www.facebook.com/creativepluz" target="_blank" class="desktop-social-btn" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/creativepluz" target="_blank" class="desktop-social-btn" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/creativepluz" target="_blank" class="desktop-social-btn" title="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/creativepluz" target="_blank" class="desktop-social-btn" title="YouTube"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.pinterest.com/creativepluz" target="_blank" class="desktop-social-btn" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+        <a href="https://www.linkedin.com/company/creativepluz" target="_blank" class="desktop-social-btn" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+    </div>
+
+    <!-- Mobile Header with Logo and Views (Visible on Mobile Only) -->
     <div
         style="display: flex; justify-content: space-between; align-items: center; padding: 15px 10px 4px 10px; margin-top: 5px;">
         <div class="companylogo" style="margin: 0; line-height: 1;">
@@ -57,19 +105,19 @@
         <table class="contact-table" style="width: 100%; border-collapse: collapse;">
             <tbody>
                 <tr>
-                    <td style="width: 40px; padding: 4px 0;"><a target="_blank" href="https://maps.app.goo.gl/ayD6BbPquR9shN7w9" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #fff; text-decoration: none; font-size: 16px; background: #3498db; border-radius: 8px;"><i class="fa fa-map-marker"></i></a></td>
+                    <td style="width: 40px; padding: 4px 0;"><a target="_blank" href="https://maps.app.goo.gl/ayD6BbPquR9shN7w9" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #333; text-decoration: none; font-size: 16px; background: #fff; border: 1px solid #ddd; border-radius: 8px;"><i class="fa fa-map-marker"></i></a></td>
                     <td style="padding-left: 12px;"><a target="_blank" href="https://maps.app.goo.gl/ayD6BbPquR9shN7w9" style="color: #555; font-size: 13px; text-decoration: none; line-height: 1.3;">Lerniyar Street, SH 84, Solar Pirivu, Erode, Tamil Nadu 638002</a></td>
                 </tr>
                 <tr>
-                    <td style="width: 40px; padding: 4px 0;"><a href="mailto:Creativepluz.in@gmail.com" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #fff; text-decoration: none; font-size: 16px; background: #f39c12; border-radius: 8px;"><i class="fa fa-envelope"></i></a></td>
+                    <td style="width: 40px; padding: 4px 0;"><a href="mailto:Creativepluz.in@gmail.com" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #333; text-decoration: none; font-size: 16px; background: #fff; border: 1px solid #ddd; border-radius: 8px;"><i class="fa fa-envelope"></i></a></td>
                     <td style="padding-left: 12px;"><a href="mailto:Creativepluz.in@gmail.com" style="color: #555; font-size: 13px; text-decoration: none; line-height: 1.3;">Creativepluz.in@gmail.com</a></td>
                 </tr>
                 <tr>
-                    <td style="width: 40px; padding: 4px 0;"><a target="_blank" href="https://store.creatorschoice.in/" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #fff; text-decoration: none; font-size: 16px; background: #2ecc71; border-radius: 8px;"><i class="fa fa-globe"></i></a></td>
+                    <td style="width: 40px; padding: 4px 0;"><a target="_blank" href="https://store.creatorschoice.in/" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #333; text-decoration: none; font-size: 16px; background: #fff; border: 1px solid #ddd; border-radius: 8px;"><i class="fa fa-globe"></i></a></td>
                     <td style="padding-left: 12px;"><a target="_blank" href="https://store.creatorschoice.in/" style="color: #555; font-size: 13px; text-decoration: none; line-height: 1.3;">http://www.creativepluz.in/</a></td>
                 </tr>
                 <tr>
-                    <td style="width: 40px; padding: 4px 0;"><a target="_blank" href="tel:919952573997" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #fff; text-decoration: none; font-size: 16px; background: #e5605d; border-radius: 8px;"><i class="fa fa-phone"></i></a></td>
+                    <td style="width: 40px; padding: 4px 0;"><a target="_blank" href="tel:919952573997" style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; color: #333; text-decoration: none; font-size: 16px; background: #fff; border: 1px solid #ddd; border-radius: 8px;"><i class="fa fa-phone"></i></a></td>
                     <td style="padding-left: 12px;"><a target="_blank" href="tel:919952573997" style="color: #555; font-size: 13px; text-decoration: none; line-height: 1.3;">+91 9952573997</a></td>
                 </tr>
             </tbody>
