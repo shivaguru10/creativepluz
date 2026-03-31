@@ -391,7 +391,7 @@
         display: flex !important;
         flex-direction: column;
         align-items: center;
-        max-width: 46.875rem;
+        max-width: 80rem;
         margin: 0 auto;
         padding: 0;
         gap: 2rem;
@@ -443,7 +443,7 @@
     /* About Paragraph Section */
     .desktop-about-section {
         width: 100%;
-        max-width: 42.5rem;
+        max-width: 75rem;
         text-align: center;
     }
 

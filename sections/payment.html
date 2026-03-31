@@ -9,17 +9,23 @@
             <table class="about-tbl">
                 <tbody>
                     <tr>
-                        <td class="td-label"><h3>Paytm Number</h3></td>
+                        <td class="td-label">
+                            <h3>Paytm Number</h3>
+                        </td>
                         <td>:</td>
                         <td>9952573997</td>
                     </tr>
                     <tr>
-                        <td class="td-label"><h3>Phone Pe Number</h3></td>
+                        <td class="td-label">
+                            <h3>Phone Pe Number</h3>
+                        </td>
                         <td>:</td>
                         <td>9952573997</td>
                     </tr>
                     <tr>
-                        <td class="td-label"><h3>Google Pay Number</h3></td>
+                        <td class="td-label">
+                            <h3>Google Pay Number</h3>
+                        </td>
                         <td>:</td>
                         <td>9952573997</td>
                     </tr>
@@ -31,27 +37,37 @@
             <table class="about-tbl">
                 <tbody>
                     <tr>
-                        <td class="td-label"><h3>Bank Name</h3></td>
+                        <td class="td-label">
+                            <h3>Bank Name</h3>
+                        </td>
                         <td>:</td>
                         <td>Your Bank</td>
                     </tr>
                     <tr>
-                        <td class="td-label"><h3>Account Holder</h3></td>
+                        <td class="td-label">
+                            <h3>Account Holder</h3>
+                        </td>
                         <td>:</td>
                         <td>Creativepluz</td>
                     </tr>
                     <tr>
-                        <td class="td-label"><h3>Account Number</h3></td>
+                        <td class="td-label">
+                            <h3>Account Number</h3>
+                        </td>
                         <td>:</td>
                         <td>Your Number</td>
                     </tr>
                     <tr>
-                        <td class="td-label"><h3>Account Type</h3></td>
+                        <td class="td-label">
+                            <h3>Account Type</h3>
+                        </td>
                         <td>:</td>
                         <td>Savings Account</td>
                     </tr>
                     <tr>
-                        <td class="td-label"><h3>IFSC code</h3></td>
+                        <td class="td-label">
+                            <h3>IFSC code</h3>
+                        </td>
                         <td>:</td>
                         <td>Your Number</td>
                     </tr>
@@ -123,99 +139,104 @@
 
         </table>
 
+        <style>
+            .mobile-qr-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem;
+                margin-top: 1.25rem;
+                padding: 0 0.625rem;
+            }
+
+            .mobile-qr-card {
+                background: #f8f9fa;
+                padding: 1.25rem;
+                border-radius: 0.625rem;
+                text-align: center;
+                box-shadow: 0 2px 0.375rem rgba(0, 0, 0, 0.05);
+            }
+
+            .mobile-qr-card h4 {
+                font-size: 1rem;
+                margin-bottom: 0.625rem;
+                color: #333;
+            }
+
+            .mobile-qr-card img {
+                width: 100%;
+                max-width: 9.375rem;
+                height: auto;
+                border-radius: 0.5rem;
+                border: 2px solid #070707;
+            }
+
+            @media (min-width: 1024px) {
+                .mobile-payment-content h3[align="center"]+.mobile-qr-grid {
+                    display: none !important;
+                }
+            }
+        </style>
+
         <h3 align="center">Account Details:</h3>
 
         <table class="about-tbl">
-
             <tbody>
-
                 <tr>
-
                     <td width="50%" bgcolor="#f5f5f5" class="td-label">
                         <h3>Bank Name</h3>
                     </td>
-
                     <td bgcolor="#f5f5f5">: </td>
-
                     <td bgcolor="#f5f5f5"> Your Bank </td>
-
                 </tr>
-
                 <tr>
-
                     <td width="50%" class="td-label">
                         <h3>Account Holder Name</h3>
                     </td>
-
                     <td>: </td>
-
                     <td> Creativepluz </td>
-
                 </tr>
-
                 <tr>
-
                     <td width="50%" bgcolor="#f5f5f5" class="td-label">
                         <h3>Account Number</h3>
                     </td>
-
                     <td bgcolor="#f5f5f5">: </td>
-
                     <td bgcolor="#f5f5f5">Your Number </td>
-
                 </tr>
-
                 <tr>
-
                     <td width="50%" class="td-label">
                         <h3>Account Type</h3>
                     </td>
-
                     <td>: </td>
-
                     <td> Savings Account </td>
-
                 </tr>
-
                 <tr>
-
                     <td width="50%" bgcolor="#f5f5f5" class="td-label">
                         <h3>IFSC code</h3>
                     </td>
-
                     <td bgcolor="#f5f5f5">: </td>
-
                     <td bgcolor="#f5f5f5"> Your Number </td>
-
                 </tr>
-
             </tbody>
-
         </table>
 
         <h3 align="center">QR codes:</h3>
 
-        <div>
+        <div class="mobile-qr-grid">
+            <!-- <div class="mobile-qr-card">
+                <h4>Paytm</h4>
+                <img src="images/upi-qr-code.png" alt="Paytm QR">
+            </div> -->
 
-            <h4>Paytm</h4>
+            <div class="mobile-qr-card">
+                <h4>Google Pay</h4>
+                <img src="images/upi-qr-code.png" alt="Google Pay QR">
+            </div>
 
-            <img src="images/upi-qr-code.png" class="qr-image" alt="Paytm QR">
+            <div class="mobile-qr-card">
+                <h4>PhonePe</h4>
+                <img src="images/upi-qr-code.png" alt="PhonePe QR">
+            </div>
         </div>
-
-        <div>
-
-            <h4>Google Pay</h4>
-
-            <img src="images/upi-qr-code.png" class="qr-image" alt="Google Pay QR">
-        </div>
-
-        <div>
-
-            <h4>PhonePe</h4>
-
-            <img src="images/upi-qr-code.png" class="qr-image" alt="PhonePe QR">
-        </div>
-
     </div>
 
 </div>
