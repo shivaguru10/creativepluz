@@ -10,10 +10,10 @@
 .contact-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 }
 
 .contact-table td {
-    padding: 10px 0;
+    padding: 0.625rem 0;
     vertical-align: middle;
 }

@@ -42,6 +42,11 @@
    DESKTOP MEDIA QUERY (min-width: 1024px)
 ============================================ */
 @media (min-width: 1024px) {
+    /* Scale down the entire UI proportionally by 25% (visual 75% zoom) */
+    html {
+        font-size: 75% !important; /* 12px base font size */
+    }
+
 
     /* ============================================
        1. BASE LAYOUT - FULL WIDTH
@@ -63,7 +68,7 @@
     body {
         font-family: 'Poppins', sans-serif;
         background: #f8f9fa;
-        padding-top: 80px;
+        padding-top: 5rem;
         padding-bottom: 0;
         max-width: none !important;
         width: 100% !important;
@@ -92,15 +97,15 @@
         right: 0;
         z-index: 10000;
         background: #ffffff;
-        padding: 0 60px;
-        height: 80px;
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+        padding: 0 3.75rem;
+        height: 5rem;
+        box-shadow: 0 2px 1.25rem rgba(0, 0, 0, 0.08);
         border-bottom: 3px solid #e3010f;
     }
 
     .desktop-navbar-logo {
         font-family: 'Poppins', sans-serif;
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 800;
         color: #3a3a3a;
         text-decoration: none;
@@ -117,18 +122,18 @@
         list-style: none;
         margin: 0;
         padding: 0;
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .desktop-navbar-menu li a {
         display: block;
-        padding: 12px 24px;
+        padding: 0.75rem 1.5rem;
         color: #2d3436;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
         font-weight: 500;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         transition: all 0.3s ease;
         white-space: nowrap;
     }
@@ -144,7 +149,7 @@
     .main-wrapper,
     .page-container {
         width: 100%;
-        padding: 40px;
+        padding: 2.5rem;
         margin: 0;
         background: #ffffff;
         margin-bottom: 0;
@@ -156,20 +161,20 @@
 
     /* Inner content max-width */
     .section-inner {
-        max-width: 1200px;
+        max-width: 75rem;
         margin: 0 auto;
     }
 
     /* Section Headings */
     .section-heading {
         font-family: 'Poppins', sans-serif;
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 700;
         color: #2d3436;
         position: relative;
         display: inline-block;
-        padding-bottom: 15px;
-        margin-bottom: 40px;
+        padding-bottom: 0.9375rem;
+        margin-bottom: 2.5rem;
     }
 
     .section-heading::after {
@@ -177,8 +182,8 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 80px;
-        height: 4px;
+        width: 5rem;
+        height: 0.25rem;
         background: linear-gradient(90deg, #e3010f, #ff6b6b);
         border-radius: 2px;
     }
@@ -188,7 +193,7 @@
     ============================================ */
     #home {
         background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-        padding: 40px 80px 60px;
+        padding: 2.5rem 5rem 3.75rem;
     }
 
     /* Hide mobile hero elements on desktop */
@@ -200,7 +205,7 @@
         display: none !important;
     }
 
-    #home > div[style*="display: flex; justify-content: center; gap: 12px"] {
+    #home > div[style*="display: flex; justify-content: center; gap: 0.75rem"] {
         display: none !important;
     }
 
@@ -217,117 +222,117 @@
         display: flex !important;
         align-items: center;
         justify-content: space-between;
-        max-width: 1200px;
+        max-width: 75rem;
         margin: 0 auto;
         background: linear-gradient(135deg, #d31d1d 0%, #b71c1c 100%);
-        padding: 50px 60px;
-        border-radius: 20px;
-        box-shadow: 0 15px 50px rgba(211, 29, 29, 0.3);
-        gap: 40px;
+        padding: 3.125rem 3.75rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.9375rem 3.125rem rgba(211, 29, 29, 0.3);
+        gap: 2.5rem;
     }
 
     .desktop-hero-left {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 1.875rem;
         flex: 1;
     }
 
     .desktop-hero-logo {
-        width: 130px;
-        height: 130px;
-        min-width: 130px;
-        border-radius: 16px;
-        border: 5px solid white;
+        width: 8.125rem;
+        height: 8.125rem;
+        min-width: 8.125rem;
+        border-radius: 1rem;
+        border: 0.3125rem solid white;
         object-fit: contain;
         background: white;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.2);
     }
 
     .desktop-hero-info h1 {
         font-family: 'Poppins', sans-serif;
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: 700;
         color: white;
-        margin: 0 0 10px 0;
+        margin: 0 0 0.625rem 0;
         white-space: normal;
     }
 
     .desktop-hero-info p {
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 1.25rem;
         color: rgba(255, 255, 255, 0.9);
         margin: 0;
     }
 
     .desktop-hero-right {
         display: flex;
-        gap: 15px;
+        gap: 0.9375rem;
         flex-shrink: 0;
     }
 
     .desktop-hero-btn {
-        width: 60px;
-        height: 60px;
-        min-width: 60px;
+        width: 3.75rem;
+        height: 3.75rem;
+        min-width: 3.75rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 14px;
-        font-size: 24px;
+        border-radius: 0.875rem;
+        font-size: 1.5rem;
         color: white;
         text-decoration: none;
         transition: all 0.3s ease;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.2);
     }
 
     .desktop-hero-btn:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.3);
     }
 
     /* Desktop Contact Grid */
     .desktop-contact-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        max-width: 1200px;
-        margin: 40px auto 0;
+        gap: 1.5625rem;
+        max-width: 75rem;
+        margin: 2.5rem auto 0;
     }
 
     .desktop-contact-card {
         display: flex;
         align-items: center;
-        padding: 24px 30px;
+        padding: 1.5rem 1.875rem;
         background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 1rem;
+        box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.08);
         transition: all 0.3s ease;
         text-decoration: none;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .desktop-contact-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+        box-shadow: 0 0.625rem 2.1875rem rgba(0, 0, 0, 0.12);
     }
 
     .desktop-contact-icon {
-        width: 56px;
-        height: 56px;
-        min-width: 56px;
+        width: 3.5rem;
+        height: 3.5rem;
+        min-width: 3.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 14px;
+        border-radius: 0.875rem;
         color: white;
-        font-size: 22px;
+        font-size: 1.375rem;
         flex-shrink: 0;
     }
 
     .desktop-contact-text {
         font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         color: #555;
         line-height: 1.6;
         word-break: normal;
@@ -337,18 +342,18 @@
     .desktop-social-row {
         display: flex !important;
         justify-content: center;
-        gap: 20px;
-        padding: 30px;
-        max-width: 1200px;
-        margin: 30px auto 0;
+        gap: 1.25rem;
+        padding: 1.875rem;
+        max-width: 75rem;
+        margin: 1.875rem auto 0;
         background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 1rem;
+        box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.06);
     }
 
     .desktop-social-btn {
-        width: 55px;
-        height: 55px;
+        width: 3.4375rem;
+        height: 3.4375rem;
         border-radius: 50%;
         border: 2px solid #e3010f;
         display: flex;
@@ -356,7 +361,7 @@
         justify-content: center;
         color: #e3010f;
         text-decoration: none;
-        font-size: 22px;
+        font-size: 1.375rem;
         transition: all 0.3s ease;
     }
 
@@ -370,15 +375,15 @@
        6. ABOUT SECTION - PROFESSIONAL BUSINESS CARD LAYOUT
     ============================================ */
     #aboutus {
-        padding: 50px 40px;
+        padding: 3.125rem 2.5rem;
         background: #fff;
     }
 
     #aboutus .section-heading {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 700;
         letter-spacing: 2px;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
         color: #1a1a1a;
     }
 
@@ -386,40 +391,40 @@
         display: flex !important;
         flex-direction: column;
         align-items: center;
-        max-width: 750px;
+        max-width: 46.875rem;
         margin: 0 auto;
         padding: 0;
-        gap: 32px;
+        gap: 2rem;
     }
 
     /* Company Details Card - Premium Style */
     .desktop-about-details-card {
         background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
-        padding: 28px 40px;
-        border-radius: 12px;
+        padding: 1.75rem 2.5rem;
+        border-radius: 0.75rem;
         border: 1px solid #e8e8e8;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.04);
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 1rem;
         width: 100%;
-        max-width: 480px;
+        max-width: 30rem;
     }
 
     .about-row {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 0.75rem;
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
-        padding: 4px 0;
+        font-size: 0.9375rem;
+        padding: 0.25rem 0;
     }
 
     .about-label {
         font-weight: 600;
         color: #1a1a1a;
-        min-width: 180px;
-        font-size: 14px;
+        min-width: 11.25rem;
+        font-size: 0.875rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
@@ -431,14 +436,14 @@
 
     .about-value {
         color: #444;
-        font-size: 15px;
+        font-size: 0.9375rem;
         font-weight: 500;
     }
 
     /* About Paragraph Section */
     .desktop-about-section {
         width: 100%;
-        max-width: 680px;
+        max-width: 42.5rem;
         text-align: center;
     }
 
@@ -446,17 +451,17 @@
         text-align: center;
         margin: 0;
         line-height: 1.85;
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: #555;
         letter-spacing: 0.2px;
     }
 
     .desktop-about-section h3 {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 600;
         color: #1a1a1a;
         margin-top: 0;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         text-transform: uppercase;
         letter-spacing: 1px;
         position: relative;
@@ -469,7 +474,7 @@
         bottom: -6px;
         left: 50%;
         transform: translateX(-50%);
-        width: 40px;
+        width: 2.5rem;
         height: 2px;
         background: #e3010f;
     }
@@ -478,17 +483,17 @@
     .desktop-about-section .unorderedList {
         display: inline-block;
         text-align: left;
-        margin: 8px 0 0 0;
+        margin: 0.5rem 0 0 0;
         padding-left: 0;
         list-style: none;
     }
 
     .desktop-about-section .unorderedList li {
-        padding: 10px 0;
-        font-size: 14px;
+        padding: 0.625rem 0;
+        font-size: 0.875rem;
         color: #444;
         border-bottom: 1px solid #f0f0f0;
-        padding-left: 24px;
+        padding-left: 1.5rem;
         position: relative;
     }
 
@@ -502,23 +507,23 @@
         left: 0;
         color: #e3010f;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     /* Other Links */
     .desktop-about-links {
-        max-width: 520px;
+        max-width: 32.5rem;
         background: #fafafa;
-        padding: 24px 32px;
-        border-radius: 10px;
+        padding: 1.5rem 2rem;
+        border-radius: 0.625rem;
         border: 1px solid #eee;
     }
 
     .desktop-about-links .other-links-link {
         display: block;
-        margin: 10px 0;
+        margin: 0.625rem 0;
         text-align: center;
-        font-size: 14px;
+        font-size: 0.875rem;
         color: #3498db;
         text-decoration: none;
         transition: color 0.2s ease;
@@ -529,48 +534,48 @@
     }
 
     .desktop-about-links .other-links-link i {
-        margin-right: 8px;
-        font-size: 12px;
+        margin-right: 0.5rem;
+        font-size: 0.75rem;
     }
 
     /* Documents Section */
     .desktop-about-docs {
-        max-width: 520px;
+        max-width: 32.5rem;
     }
 
     .desktop-about-docs .download {
         display: inline-flex;
         align-items: center;
         margin: 0 auto;
-        padding: 14px 28px;
+        padding: 0.875rem 1.75rem;
         background: #fff;
         border: 1px solid #ddd;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         text-decoration: none;
         transition: all 0.2s ease;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.04);
     }
 
     .desktop-about-docs .download:hover {
         border-color: #e3010f;
-        box-shadow: 0 4px 12px rgba(227, 1, 15, 0.1);
+        box-shadow: 0 0.25rem 0.75rem rgba(227, 1, 15, 0.1);
     }
 
     .desktop-about-docs .pdf-icon {
-        font-size: 24px;
+        font-size: 1.5rem;
         color: #e3010f;
-        margin-right: 12px;
+        margin-right: 0.75rem;
     }
 
     .desktop-about-docs .pdf-number {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 500;
         color: #333;
     }
 
     .desktop-about-docs .download-icon {
-        margin-left: 16px;
-        font-size: 14px;
+        margin-left: 1rem;
+        font-size: 0.875rem;
         color: #888;
     }
 
@@ -605,14 +610,14 @@
     }
 
     .about-tbl td {
-        padding: 14px 10px;
+        padding: 0.875rem 0.625rem;
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
         word-break: normal;
     }
 
     .about-tbl .td-label h3 {
-        font-size: 15px;
+        font-size: 0.9375rem;
         font-weight: 600;
         color: #2d3436;
         margin: 0;
@@ -621,7 +626,7 @@
 
     .about-txt {
         font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.8;
         color: #555;
     }
@@ -629,22 +634,22 @@
     #aboutus h3,
     .desktop-about-wrapper h3 {
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 600;
         color: #2d3436;
-        margin-top: 10px;
-        margin-bottom: 12px;
+        margin-top: 0.625rem;
+        margin-bottom: 0.75rem;
     }
 
     .unorderedList {
-        padding-left: 25px;
+        padding-left: 1.5625rem;
     }
 
     .unorderedList li {
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: #555;
-        padding: 8px 0;
+        padding: 0.5rem 0;
         line-height: 1.6;
     }
 
@@ -654,9 +659,9 @@
 
     .other-links-wrapper {
         background: #f8f9fa;
-        padding: 25px;
-        border-radius: 12px;
-        margin-top: 30px;
+        padding: 1.5625rem;
+        border-radius: 0.75rem;
+        margin-top: 1.875rem;
     }
 
     .other-links-header {
@@ -665,11 +670,11 @@
 
     .other-links-link {
         display: block;
-        padding: 10px 0;
+        padding: 0.625rem 0;
         color: #e3010f;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
         transition: color 0.3s ease;
         word-break: break-word;
     }
@@ -679,18 +684,18 @@
     }
 
     .other-links-link i {
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
 
     .download {
         display: flex;
         align-items: center;
-        padding: 20px 25px;
+        padding: 1.25rem 1.5625rem;
         background: #f8f9fa;
-        border-radius: 12px;
+        border-radius: 0.75rem;
         text-decoration: none;
         transition: all 0.3s ease;
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
 
     .download:hover {
@@ -704,20 +709,20 @@
     }
 
     .pdf-icon {
-        font-size: 28px;
+        font-size: 1.75rem;
         color: #e3010f;
-        margin-right: 15px;
+        margin-right: 0.9375rem;
     }
 
     .pdf-number {
         flex: 1;
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: #2d3436;
     }
 
     .download-icon {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: #e3010f;
     }
 
@@ -725,15 +730,15 @@
        7. SERVICES SECTION - 3 COLUMN GRID
     ============================================ */
     #products-services {
-        padding: 80px 100px;
+        padding: 5rem 6.25rem;
         background: #f8f9fa;
     }
 
     #products-services .services-grid {
         display: grid !important;
-        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)) !important;
-        gap: 40px !important;
-        max-width: 1500px;
+        grid-template-columns: repeat(auto-fit, minmax(28.125rem, 1fr)) !important;
+        gap: 2.5rem !important;
+        max-width: 93.75rem;
         margin: 0 auto;
         justify-items: stretch !important;
     }
@@ -742,52 +747,52 @@
         width: 100% !important;
         max-width: none !important;
         margin: 0 !important;
-        padding: 35px;
-        border-radius: 20px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        padding: 2.1875rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.5rem 1.875rem rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
         display: flex;
         flex-direction: column;
         background: #ffffff;
         height: auto;
-        min-height: 550px;
+        min-height: 34.375rem;
     }
 
     .serivecard:hover {
         transform: translateY(-12px) !important;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18) !important;
+        box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.18) !important;
     }
 
     .serivecard h4 {
         font-family: 'Poppins', sans-serif !important;
-        font-size: 24px !important;
+        font-size: 1.5rem !important;
         font-weight: 600 !important;
         color: #2d3436 !important;
-        margin-bottom: 22px !important;
+        margin-bottom: 1.375rem !important;
         word-break: normal !important;
     }
 
     .serivecard img {
-        border-radius: 14px !important;
-        height: 260px;
+        border-radius: 0.875rem !important;
+        height: 16.25rem;
         object-fit: cover;
     }
 
     .serivecard .price {
         font-family: 'Poppins', sans-serif !important;
-        font-size: 24px !important;
+        font-size: 1.5rem !important;
         font-weight: 700 !important;
         color: #e3010f !important;
-        margin: 25px 0 !important;
+        margin: 1.5625rem 0 !important;
         white-space: nowrap;
     }
 
     .serivecard .btn {
         width: 100% !important;
-        padding: 18px 28px !important;
-        border-radius: 14px !important;
+        padding: 1.125rem 1.75rem !important;
+        border-radius: 0.875rem !important;
         font-family: 'Poppins', sans-serif !important;
-        font-size: 17px !important;
+        font-size: 1.0625rem !important;
         font-weight: 600 !important;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -806,7 +811,7 @@
        8. PAYMENT SECTION - 2 COLUMN LAYOUT
     ============================================ */
     #payment {
-        padding: 60px 80px;
+        padding: 3.75rem 5rem;
     }
 
     /* Hide mobile payment content on desktop */
@@ -821,33 +826,33 @@
     .desktop-payment-wrapper {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        max-width: 1200px;
+        gap: 2.5rem;
+        max-width: 75rem;
         margin: 0 auto;
     }
 
     .desktop-payment-card {
         background: #f8f9fa;
-        padding: 30px;
-        border-radius: 16px;
+        padding: 1.875rem;
+        border-radius: 1rem;
     }
 
     .desktop-payment-card h3 {
         font-family: 'Poppins', sans-serif;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 600;
         color: #2d3436;
-        margin: 0 0 20px 0;
+        margin: 0 0 1.25rem 0;
     }
 
     .desktop-payment-card .about-tbl td {
-        padding: 12px 10px;
-        font-size: 15px;
+        padding: 0.75rem 0.625rem;
+        font-size: 0.9375rem;
         word-break: normal;
     }
 
     .desktop-payment-card .about-tbl .td-label h3 {
-        font-size: 14px;
+        font-size: 0.875rem;
         white-space: nowrap;
     }
 
@@ -855,36 +860,36 @@
     .desktop-qr-grid {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        max-width: 1200px;
-        margin: 40px auto 0;
+        gap: 1.875rem;
+        max-width: 75rem;
+        margin: 2.5rem auto 0;
     }
 
     .desktop-qr-card {
         text-align: center;
-        padding: 30px;
+        padding: 1.875rem;
         background: #f8f9fa;
-        border-radius: 16px;
+        border-radius: 1rem;
         transition: all 0.3s ease;
     }
 
     .desktop-qr-card:hover {
         transform: translateY(-8px);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.1);
     }
 
     .desktop-qr-card h4 {
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 600;
         color: #2d3436;
-        margin: 0 0 20px 0;
+        margin: 0 0 1.25rem 0;
     }
 
     .qr-image {
-        width: 180px;
-        height: 180px;
-        border-radius: 12px;
+        width: 11.25rem;
+        height: 11.25rem;
+        border-radius: 0.75rem;
         border: 3px solid #e3010f;
     }
 
@@ -892,34 +897,34 @@
        9. GALLERY SECTION - 4 COLUMN GRID
     ============================================ */
     #photogallery {
-        padding: 60px 80px;
+        padding: 3.75rem 5rem;
         background: #f8f9fa;
     }
 
     .images-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 25px;
-        max-width: 1200px;
+        grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+        gap: 1.5625rem;
+        max-width: 75rem;
         margin: 0 auto;
     }
 
     .image-wrapper {
-        border-radius: 16px;
+        border-radius: 1rem;
         overflow: hidden;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
         cursor: pointer;
     }
 
     .image-wrapper:hover {
         transform: scale(1.05);
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.2);
     }
 
     .image-wrapper img {
         width: 100%;
-        height: 220px;
+        height: 13.75rem;
         object-fit: cover;
         display: block;
         transition: transform 0.3s ease;
@@ -933,67 +938,67 @@
        10. VIDEO SECTION
     ============================================ */
     #videogallery {
-        padding: 60px 80px;
+        padding: 3.75rem 5rem;
     }
 
     #videogallery .card {
-        max-width: 900px;
+        max-width: 56.25rem;
         margin: 0 auto;
-        padding: 25px !important;
-        border-radius: 20px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        padding: 1.5625rem !important;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.1);
         background: #ffffff;
     }
 
     #videogallery iframe {
-        border-radius: 16px;
+        border-radius: 1rem;
     }
 
     /* ============================================
        11. LOCATION MAP SECTION
     ============================================ */
     #location {
-        padding: 60px 80px;
+        padding: 3.75rem 5rem;
         background: #f8f9fa;
     }
 
     #location > div[style*="width: 100%"] {
-        max-width: 1200px;
+        max-width: 75rem;
         margin: 0 auto;
-        border-radius: 20px !important;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1) !important;
+        border-radius: 1.25rem !important;
+        box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.1) !important;
         overflow: hidden;
     }
 
     #location iframe {
-        height: 450px !important;
+        height: 28.125rem !important;
     }
 
     /* ============================================
        12. FEEDBACK SECTION
     ============================================ */
     #feedback {
-        padding: 60px 80px;
+        padding: 3.75rem 5rem;
     }
 
     .feedback-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto 40px;
+        gap: 1.875rem;
+        max-width: 75rem;
+        margin: 0 auto 2.5rem;
     }
 
     .feedback-wrapper {
         background: #f8f9fa;
-        padding: 28px;
-        border-radius: 16px;
+        padding: 1.75rem;
+        border-radius: 1rem;
         transition: all 0.3s ease;
     }
 
     .feedback-wrapper:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.1);
     }
 
     .feedback-wrapper hr {
@@ -1002,7 +1007,7 @@
 
     .feedback-name-wrapper {
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
         color: #777;
     }
 
@@ -1014,26 +1019,26 @@
     .feedback-form {
         max-width: 700px;
         margin: 0 auto;
-        padding: 40px !important;
-        border-radius: 20px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        padding: 2.5rem !important;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.1);
     }
 
     .feedback-form-heading {
         font-family: 'Poppins', sans-serif;
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 600;
         color: #2d3436;
-        margin-bottom: 25px;
+        margin-bottom: 1.5625rem;
     }
 
     .feedback-form input[type="text"],
     .feedback-form textarea {
         font-family: 'Poppins', sans-serif;
-        padding: 16px 20px;
+        padding: 1rem 1.25rem;
         border: 2px solid #e8e8e8;
-        border-radius: 12px;
-        font-size: 15px;
+        border-radius: 0.75rem;
+        font-size: 0.9375rem;
         transition: border-color 0.3s ease;
     }
 
@@ -1045,9 +1050,9 @@
 
     .feedback-form button {
         font-family: 'Poppins', sans-serif;
-        padding: 16px 40px !important;
-        border-radius: 12px !important;
-        font-size: 16px !important;
+        padding: 1rem 2.5rem !important;
+        border-radius: 0.75rem !important;
+        font-size: 1rem !important;
         font-weight: 600 !important;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -1063,27 +1068,27 @@
        13. ENQUIRY FORM SECTION
     ============================================ */
     #enquiry {
-        padding: 60px 80px;
+        padding: 3.75rem 5rem;
         background: #f8f9fa;
     }
 
     .enquiry-form {
-        max-width: 800px;
+        max-width: 50rem;
         margin: 0 auto;
         background: #ffffff;
-        padding: 50px;
-        border-radius: 20px;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        padding: 3.125rem;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.08);
     }
 
     .enquiry-form input[type="text"],
     .enquiry-form input[type="email"],
     .enquiry-form textarea {
         font-family: 'Poppins', sans-serif;
-        padding: 18px 22px;
+        padding: 1.125rem 1.375rem;
         border: 2px solid #e8e8e8;
-        border-radius: 12px;
-        font-size: 15px;
+        border-radius: 0.75rem;
+        font-size: 0.9375rem;
         transition: all 0.3s ease;
         width: 100%;
         box-sizing: border-box;
@@ -1094,34 +1099,34 @@
     .enquiry-form textarea:focus {
         border-color: #e3010f;
         outline: none;
-        box-shadow: 0 0 0 4px rgba(227, 1, 15, 0.1);
+        box-shadow: 0 0 0 0.25rem rgba(227, 1, 15, 0.1);
     }
 
     .enquiry-form .flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .enquiry-form input[type="submit"] {
         font-family: 'Poppins', sans-serif;
-        padding: 18px 50px;
+        padding: 1.125rem 3.125rem;
         background: linear-gradient(135deg, #e3010f 0%, #b71c1c 100%);
         color: white;
         border: none;
-        border-radius: 12px;
-        font-size: 17px;
+        border-radius: 0.75rem;
+        font-size: 1.0625rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1px;
         cursor: pointer;
         transition: all 0.3s ease;
-        margin-top: 15px;
+        margin-top: 0.9375rem;
     }
 
     .enquiry-form input[type="submit"]:hover {
         transform: translateY(-4px);
-        box-shadow: 0 12px 30px rgba(227, 1, 15, 0.4);
+        box-shadow: 0 0.75rem 1.875rem rgba(227, 1, 15, 0.4);
     }
 
     .enquiry-form br {
@@ -1133,14 +1138,14 @@
     ============================================ */
     .copyright {
         text-align: center;
-        padding: 30px 60px;
+        padding: 1.875rem 3.75rem;
         background: #2d3436;
         color: #fff;
     }
 
     .copyright-inner {
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 0.9375rem;
     }
 
     .copyright a {
@@ -1156,17 +1161,17 @@
        15. MODAL IMPROVEMENTS
     ============================================ */
     #enquiryModal .share-form {
-        max-width: 650px !important;
-        border-radius: 20px !important;
-        padding: 40px !important;
+        max-width: 40.625rem !important;
+        border-radius: 1.25rem !important;
+        padding: 2.5rem !important;
     }
 
     #enquiryModal .enquiry-form input,
     #enquiryModal .enquiry-form textarea {
         font-family: 'Poppins', sans-serif;
-        padding: 16px 20px;
+        padding: 1rem 1.25rem;
         border: 2px solid #e8e8e8;
-        border-radius: 12px;
+        border-radius: 0.75rem;
         transition: border-color 0.3s ease;
     }
 
@@ -1198,20 +1203,20 @@
 @media (min-width: 1024px) {
 
   #aboutus {
-    padding: 40px 20px !important;
+    padding: 2.5rem 1.25rem !important;
   }
 
   .desktop-about-wrapper {
-    max-width: 650px !important;
+    max-width: 40.625rem !important;
     margin: 0 auto !important;
-    gap: 24px !important;
+    gap: 1.5rem !important;
   }
 
   /* Company card tighter */
   .desktop-about-details-card {
-    max-width: 420px !important;
-    padding: 20px 24px !important;
-    gap: 12px !important;
+    max-width: 26.25rem !important;
+    padding: 1.25rem 1.5rem !important;
+    gap: 0.75rem !important;
   }
 
   .about-row {
@@ -1219,13 +1224,13 @@
   }
 
   .about-label {
-    min-width: 140px !important;
-    font-size: 13px !important;
+    min-width: 8.75rem !important;
+    font-size: 0.8125rem !important;
   }
 
   .about-value {
     text-align: right;
-    font-size: 14px !important;
+    font-size: 0.875rem !important;
   }
 
   /* Paragraph tighter */
@@ -1234,35 +1239,35 @@
   }
 
   .desktop-about-section .about-txt {
-    font-size: 14px !important;
+    font-size: 0.875rem !important;
     line-height: 1.7 !important;
   }
 
   /* Reduce heading spacing */
   .desktop-about-section h3 {
-    font-size: 16px !important;
-    margin-bottom: 10px !important;
+    font-size: 1rem !important;
+    margin-bottom: 0.625rem !important;
   }
 
   /* Specialities compact */
   .desktop-about-section .unorderedList li {
-    padding: 6px 0 !important;
-    font-size: 14px !important;
+    padding: 0.375rem 0 !important;
+    font-size: 0.875rem !important;
   }
 
   /* Links section tighter */
   .desktop-about-links {
-    max-width: 450px !important;
-    padding: 18px 20px !important;
+    max-width: 28.125rem !important;
+    padding: 1.125rem 1.25rem !important;
   }
 
   /* Documents tighter */
   .desktop-about-docs {
-    max-width: 450px !important;
+    max-width: 28.125rem !important;
   }
 
   .desktop-about-docs .download {
-    padding: 10px 16px !important;
+    padding: 0.625rem 1rem !important;
   }
 
 }
