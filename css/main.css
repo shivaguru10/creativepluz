@@ -105,4 +105,9 @@
     .footer-menu-link {
         padding: 8px 5px !important;
     }
+
+    .footer-menu-link.active .footer-menu-icon,
+    .footer-menu-link.active .footer-menu-text {
+        color: var(--theme-color) !important;
+    }
 }
