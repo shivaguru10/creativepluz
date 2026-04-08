@@ -76,3 +76,33 @@
         width: 100%;
     }
 }
+
+/* Mobile Footer - Increased Height and Icon Size */
+@media only screen and (max-width: 768px) {
+    .footer {
+        height: 80px !important;
+        padding: 10px 0 !important;
+    }
+
+    .footer-menu {
+        height: 70px !important;
+        padding: 8px 0 !important;
+    }
+
+    .footer-menu li {
+        padding: 5px 0 !important;
+    }
+
+    .footer-menu-icon {
+        font-size: 24px !important;
+    }
+
+    .footer-menu-text {
+        font-size: 10px !important;
+        margin-top: 4px !important;
+    }
+
+    .footer-menu-link {
+        padding: 8px 5px !important;
+    }
+}
