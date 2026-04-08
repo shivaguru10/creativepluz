@@ -80,17 +80,17 @@
 /* Mobile Footer - Increased Height and Icon Size */
 @media only screen and (max-width: 768px) {
     .footer {
-        height: 80px !important;
+        height: 70px !important;
         padding: 10px 0 !important;
     }
 
     .footer-menu {
-        height: 70px !important;
-        padding: 8px 0 !important;
+        height: 60px !important;
+        padding: 6px 0 !important;
     }
 
     .footer-menu li {
-        padding: 5px 0 !important;
+        padding: 4px 0 !important;
     }
 
     .footer-menu-icon {
